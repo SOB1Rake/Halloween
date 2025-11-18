@@ -1,5 +1,7 @@
-:root{
-    --oq: #FFFFFF;
+@import url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 *{
@@ -8,6 +10,12 @@
     box-sizing: border-box;
     background: #02889B;
 }
+
+:root{
+    --oq: #FFFFFF;
+    --qora: #0000006c;
+}
+
 
 .container{
     max-width: 961px;
@@ -63,4 +71,83 @@ ul{
         box-shadow: 0 0 10px 10px #FF693A;
         text-shadow: 0 0 10px white;
     }
+}
+
+/* HEADER */
+
+.header_info_div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.div11{
+    max-width: 541px;
+    width: 100%;
+    color: var(--oq);
+
+    h1{
+        font-size: 60px;
+        font-weight: 900;
+    }
+
+    p{
+        font-size: 25px;
+    }
+}
+
+.div12{
+    img{
+        width: 347px;
+        height: 387px;
+    }
+}
+
+.scroll{
+    width: 50px;
+    height: 50px;
+    background: var(--qora);
+    color: var(--oq);
+    text-align: center;
+    margin: 0 auto;
+    font-size: 30px;
+    padding: 5px;
+    border-radius: 50%;
+    position: relative;
+}
+
+.scroll::after{
+    content: "";
+    position: absolute;
+    bottom: 18%;
+    left: 47%;
+    width: 3px;
+    height: 15px;
+    background: var(--oq);
+    transition: 0.5s;
+}
+
+.scroll:hover::after{
+    bottom: 15%;
+    left: 57%;
+    width: 3px;
+    height: 15px;
+    transform: rotate(45deg);
+}
+.scroll::before{
+    content: "";
+    position: absolute;
+    bottom: 18%;
+    right: 47%;
+    width: 3px;
+    height: 15px;
+    background: var(--oq);
+    transition: 0.5s;
+}
+.scroll:hover::before{
+    bottom: 15%;
+    right: 57%;
+    width: 3px;
+    height: 15px;
+    transform: rotate(-45deg);
 }
