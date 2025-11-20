@@ -151,3 +151,34 @@ ul{
     height: 15px;
     transform: rotate(-45deg);
 }
+
+
+/* MAIN */
+
+.Category{
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+    }
+
+    .cards_sec{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        gap: 87px;
+        margin-top: 55px;
+        color: #fff;
+        text-align: center;
+
+        h3{
+            font-size: 30px;
+            font-weight: 600;
+        }
+
+        .img_cards1{
+            margin-top: -60px;
+        }
+    }
+}
